@@ -1,3 +1,7 @@
 module.exports = {
-  preset: '@react-native/jest-preset',
+  preset: 'jest-expo',
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  transformIgnorePatterns: [
+    'node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@react-native-community/datetimepicker|react-native-safe-area-context)',
+  ],
 };

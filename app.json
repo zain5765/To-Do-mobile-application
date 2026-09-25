@@ -1,4 +1,42 @@
 {
-  "name": "Todo",
-  "displayName": "Todo"
+  "expo": {
+    "name": "Todoo",
+    "slug": "todoo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f6f7fb"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.todoo.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#f6f7fb",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.todoo.app",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-community/datetimepicker",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#4f6ef7"
+        }
+      ]
+    ]
+  }
 }
